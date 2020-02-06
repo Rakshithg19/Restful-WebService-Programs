@@ -1,0 +1,34 @@
+package com.raksh.DemoRest;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Rakshith {
+	private int id;
+	@Override
+	public String toString() {
+		return "Rakshith [id=" + id + ", name=" + name + ", points=" + points + "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	private String name;
+	private int points;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPoints() {
+		return points;
+	}
+	public void setPoints(int points) {
+		this.points = points;
+	}
+	 
+
+}
